@@ -1,8 +1,6 @@
-mod day;
-mod days;
-use day::DayI;
+mod y2022;
+use crate::y2022::*;
 
 fn main() {
-    let day = <days::Day01 as DayI>::new();
-    println!("{}, {}", day.task1, day.task2)
+    println!("{} : {}", day01::task1(), day01::task2());
 }
