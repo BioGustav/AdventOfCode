@@ -19,7 +19,7 @@ pub fn task1() -> String {
         sum += match line {
             "A X" => draw + rock,
             "A Y" => win + paper,
-            "A Z" => draw + scissors,
+            "A Z" => loss + scissors,
             "B X" => loss + rock,
             "B Y" => draw + paper,
             "B Z" => win + scissors,
