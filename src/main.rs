@@ -13,7 +13,11 @@ use crate::y2022::*;
 
 fn main() {
     let now = Instant::now();
-    println!("{} : {}", day03::task1(), day03::task2());
-    let elapsed = now.elapsed();
-    println!("{:?}", elapsed);
+    let task1 = day04::task1();
+    let elapsed1 = now.elapsed();
+    let now = Instant::now();
+    let task2 = day04::task2();
+    let elapsed2 = now.elapsed();
+    println!("{:?} in {:?}", task1, elapsed1);
+    println!("{:?} in {:?}", task2, elapsed2);
 }

@@ -1,7 +1,7 @@
 use fileinput::FileInput;
 use std::io::{BufRead, BufReader};
 
-pub fn _task1() -> String {
+pub fn task1() -> String {
     let filenames = vec!["./assignments/y2022/day01"];
     let fileinput = FileInput::new(&filenames);
     let reader = BufReader::new(fileinput);
@@ -26,7 +26,7 @@ pub fn _task1() -> String {
     max.to_string()
 }
 
-pub fn _task2() -> String {
+pub fn task2() -> String {
     let filenames = vec!["./assignments/y2022/day01"];
     let fileinput = FileInput::new(&filenames);
     let reader = BufReader::new(fileinput);
