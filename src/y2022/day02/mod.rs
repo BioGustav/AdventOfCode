@@ -1,7 +1,7 @@
 use fileinput::FileInput;
 use std::io::{BufRead, BufReader};
 
-pub fn task1() -> String {
+pub fn _task1() -> String {
     let filenames = vec!["./assignments/y2022/day02"];
     let fileinput = FileInput::new(&filenames);
     let reader = BufReader::new(fileinput);
@@ -32,7 +32,7 @@ pub fn task1() -> String {
     sum.to_string()
 }
 
-pub fn task2() -> String {
+pub fn _task2() -> String {
     let filenames = vec!["./assignments/y2022/day02"];
     let fileinput = FileInput::new(&filenames);
     let reader = BufReader::new(fileinput);
