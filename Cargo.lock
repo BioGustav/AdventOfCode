@@ -3,6 +3,14 @@
 version = 3
 
 [[package]]
+name = "advent_of_code"
+version = "0.2.0"
+dependencies = [
+ "aoc-runner",
+ "aoc-runner-derive",
+]
+
+[[package]]
 name = "aoc-runner"
 version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -30,22 +38,6 @@ dependencies = [
  "serde_derive",
  "serde_json",
 ]
-
-[[package]]
-name = "aoc2022"
-version = "0.1.0"
-dependencies = [
- "aoc-runner",
- "aoc-runner-derive",
- "aoc-runner-internal",
- "fileinput",
-]
-
-[[package]]
-name = "fileinput"
-version = "0.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "53a330402b8f3d1b473ce5999ac0e5061ed45fbb19876173cd9c923602ac7a1b"
 
 [[package]]
 name = "itoa"
