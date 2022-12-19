@@ -16,3 +16,5 @@ My solutions for the [AoC 2022](https://adventofcode.com/2022).
 |    4 | [Camp Cleanup](https://adventofcode.com/2022/day/4)            | [day04.rs](src/y2022/day04.rs) | [day04.pdf](benches/2022/day04.pdf) |
 |    5 | [Supply Stacks](https://adventofcode.com/2022/day/5)           | [day05.rs](src/y2022/day05.rs) | [day05.pdf](benches/2022/day05.pdf) |
 |    6 | [Tuning Trouble](https://adventofcode.com/2022/day/6)          | [day06.rs](src/y2022/day06.rs) | [day06.pdf](benches/2022/day06.pdf) |
+|  ... | ...                                                            | ...                            |                                 ... |
+|   19 | [Not Enough Minerals](https://adventofcode.com/2022/day/19)    | [day19.rs](src/y2022/day19.rs) | [day19.pdf](benches/2022/day19.pdf) |
