@@ -35,6 +35,7 @@ fn part1(input: &[Blueprint]) -> u32 {
         for minute in 1..=MAX_MINUTES {
             println!("== Minute {} ==", minute);
             // Building
+            let mut skip = false;
             let mut new_robots = Robots::new(0, 0, 0, 0);
             if fullfilled_multiple(&blueprint.geode, &(stock.ore, stock.obsidian)) {
                 new_robots.geode += 1;
@@ -54,7 +55,7 @@ fn part1(input: &[Blueprint]) -> u32 {
                     blueprint.obsidian.0, blueprint.obsidian.1
                 );
             }
-            if fullfilled_single(&blueprint.clay, &stock.ore) {
+            if !skip && fullfilled_single(&blueprint.clay, &stock.ore) {
                 new_robots.clay += 1;
                 stock.ore -= blueprint.clay;
                 println!(
@@ -62,7 +63,7 @@ fn part1(input: &[Blueprint]) -> u32 {
                     blueprint.clay
                 );
             }
-            if fullfilled_single(&blueprint.ore, &stock.ore) {
+            if !skip && fullfilled_single(&blueprint.ore, &stock.ore) {
                 new_robots.ore += 1;
                 stock.ore -= blueprint.ore;
                 println!(
